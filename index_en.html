@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -314,14 +314,59 @@
             margin-top: auto;
         }
 
-        /* --- RESPONSIVE --- */
-        @media (max-width: 600px) {
+        /* --- REGLAS RESPONSIVAS PARA TABLETS --- */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            header { 
+                padding: 35px 5%; 
+            }
+            .destinos-container { 
+                gap: 25px; 
+                padding: 40px 30px; 
+            }
+        }
+
+        /* --- REGLAS RESPONSIVAS PARA MÓVILES --- */
+        @media (max-width: 768px) {
+            header { 
+                padding: 25px 15px; 
+            }
+            
             .contacto {
                 display: flex;
                 flex-direction: column;
-                gap: 15px;
+                gap: 12px;
+                padding: 15px;
             }
-            .contacto-separador { display: none; }
+            
+            .contacto-separador { 
+                display: none; 
+            }
+            
+            .fb-btn {
+                width: 100%;
+                max-width: 290px;
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+
+            .destinos-container {
+                padding: 30px 15px;
+                gap: 25px;
+            }
+
+            .destino-card {
+                max-width: 100%; /* Permite que las tarjetas usen todo el ancho en celulares */
+            }
+
+            .lang-switch-container {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .lang-switch a {
+                padding: 6px 14px;
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -345,8 +390,8 @@
                 <svg class="icon-tel" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                 +52 983 351 3396
             </a>
-			
-			<span style="display:block; margin-top: 8px; font-size: 0.8em; color: #a1a1aa; font-style: italic;">* Phone calls only (No WhatsApp/Text)</span>
+            
+            <span style="display:block; margin-top: 8px; font-size: 0.8em; color: #a1a1aa; font-style: italic;">* Phone calls only (No WhatsApp/Text)</span>
         </div>
         <br>
         
@@ -363,11 +408,11 @@
                 Bacalar Lagoon
             </div>
             <div class="destino-body">
-                <p>Explore the lagoon of 7 colors and relax in its crystal clear waters.</p>
+                <p>Explore the lagoon of the 7 colors and relax in its crystal clear waters.</p>
                 <ul class="actividades-list">
                     <li>Boat / Pontoon Tour</li>
-                    <li>Kayak and Paddleboard Rental</li>
-                    <li>Visit the Pirates' Channel</li>
+                    <li>Kayak & Paddleboard Rental</li>
+                    <li>Pirates' Channel Visit</li>
                     <li>Swim in Cenote Azul</li>
                 </ul>
                 <a href="Pagina_Bacalar/Bacalar_en.html" class="btn btn-bacalar">View more details</a>
@@ -384,7 +429,7 @@
                     <li>Archaeological Zone Entrance</li>
                     <li>Certified Bilingual Guide</li>
                     <li>Transportation Included</li>
-                    <li>Snacks, Water, and Sodas</li>
+                    <li>Snacks, Water & Sodas</li>
                 </ul>
                 <a href="Pagina_Chacchoben/Chacchoben_en.html" class="btn btn-chacchoben">View more details</a>
             </div>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -314,14 +314,59 @@
             margin-top: auto;
         }
 
-        /* --- RESPONSIVE --- */
-        @media (max-width: 600px) {
+        /* --- REGLAS RESPONSIVAS PARA TABLETS --- */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            header { 
+                padding: 35px 5%; 
+            }
+            .destinos-container { 
+                gap: 25px; 
+                padding: 40px 30px; 
+            }
+        }
+
+        /* --- REGLAS RESPONSIVAS PARA MÓVILES --- */
+        @media (max-width: 768px) {
+            header { 
+                padding: 25px 15px; 
+            }
+            
             .contacto {
                 display: flex;
                 flex-direction: column;
-                gap: 15px;
+                gap: 12px;
+                padding: 15px;
             }
-            .contacto-separador { display: none; }
+            
+            .contacto-separador { 
+                display: none; 
+            }
+            
+            .fb-btn {
+                width: 100%;
+                max-width: 290px;
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+
+            .destinos-container {
+                padding: 30px 15px;
+                gap: 25px;
+            }
+
+            .destino-card {
+                max-width: 100%; /* Permite que las tarjetas usen todo el ancho en celulares */
+            }
+
+            .lang-switch-container {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .lang-switch a {
+                padding: 6px 14px;
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
